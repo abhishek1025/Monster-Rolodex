@@ -1,7 +1,12 @@
 // import { Component } from "react";
+import { Monster } from '../../App';
 import './card.style.css';
 
-const Card = ({ monster }) => {
+interface ICardProps {
+    monster: Monster;
+}
+
+const Card = ({ monster }: ICardProps) => {
     const { name, email, id } = monster;
     return (
         <div className="card-container">
